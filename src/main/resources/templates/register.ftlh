@@ -27,7 +27,11 @@
                 </div>
                 <div class="mb-3">
                     <label for="currency" class="form-label">Валюта:</label>
-                    <input type="text" class="form-control" id="currency" name="currency" th:field="*{currency}" placeholder="USD" required>
+                    <select class="form-control" id="currency" name="currency">
+                        <option value="USD">USD</option>
+                        <option value="KZT">KZT</option>
+                        <option value="RUB">RUB</option>
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
             </form>
